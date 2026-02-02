@@ -16,5 +16,10 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void ChooseCard(object sender, EventArgs e)
+        {
+
+        }
     }
 }
