@@ -44,7 +44,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Card1 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +72,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label3, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.Card1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label16, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Webdings", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -280,18 +280,18 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.ChangeText);
             // 
-            // Card1
+            // label16
             // 
-            this.Card1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Card1.Font = new System.Drawing.Font("Webdings", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.Card1.ForeColor = System.Drawing.Color.SkyBlue;
-            this.Card1.Location = new System.Drawing.Point(5, 2);
-            this.Card1.Name = "Card1";
-            this.Card1.Size = new System.Drawing.Size(124, 123);
-            this.Card1.TabIndex = 0;
-            this.Card1.Text = "c";
-            this.Card1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Card1.Click += new System.EventHandler(this.ChangeText);
+            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label16.Font = new System.Drawing.Font("Webdings", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.label16.ForeColor = System.Drawing.Color.SkyBlue;
+            this.label16.Location = new System.Drawing.Point(5, 2);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(124, 123);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "c";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label16.Click += new System.EventHandler(this.ChangeText);
             // 
             // Form1
             // 
@@ -309,7 +309,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label Card1;
+        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
