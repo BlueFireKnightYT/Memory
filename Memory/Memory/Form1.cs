@@ -14,6 +14,11 @@ namespace Memory
         Label firstClicked, secondClicked;
         Timer hideTimer;
 
+        int seconds = 0;
+        int minutes = 0;
+
+        int score = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -67,11 +72,30 @@ namespace Memory
 
             if (clickedLabel == firstClicked)
                 return;
+                
 
             secondClicked = clickedLabel;
             secondClicked.ForeColor = Color.Black;
 
             hideTimer.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            seconds++;
+
+            if (seconds > 60)
+            {
+                seconds = 0;
+                minutes++;
+            }
+
+            if (score == 8)
+            {
+                timer1.Stop();
+            }
+
+            TimerLbl.Text = "Time: " + minutes.ToString() + ":" + seconds.ToString();
         }
 
         private void HideTimer_Tick(object sender, EventArgs e)
@@ -85,9 +109,14 @@ namespace Memory
                     firstClicked.ForeColor = firstClicked.BackColor;
                     secondClicked.ForeColor = secondClicked.BackColor;
                 }
+                else
+                {
+                    score++;
+                    ScoreLbl.Text = "Score: " + score.ToString();
+                }
 
-                firstClicked = null;
-                secondClicked = null;
+                    firstClicked = null;
+                    secondClicked = null;
             }
         }
     }
