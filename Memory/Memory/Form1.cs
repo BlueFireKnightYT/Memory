@@ -98,6 +98,16 @@ namespace Memory
             TimerLbl.Text = "Time: " + minutes.ToString() + ":" + seconds.ToString();
         }
 
+        private void ScoreLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TimerLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void HideTimer_Tick(object sender, EventArgs e)
         {
             hideTimer.Stop();
