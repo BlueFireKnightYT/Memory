@@ -49,6 +49,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.TimerLbl = new System.Windows.Forms.Label();
             this.ScoreLbl = new System.Windows.Forms.Label();
+            this.BeurtenLBL = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -325,11 +326,22 @@
             this.ScoreLbl.Text = "Score: 0";
             this.ScoreLbl.Click += new System.EventHandler(this.ScoreLbl_Click);
             // 
+            // BeurtenLBL
+            // 
+            this.BeurtenLBL.AutoSize = true;
+            this.BeurtenLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BeurtenLBL.Location = new System.Drawing.Point(354, 552);
+            this.BeurtenLBL.Name = "BeurtenLBL";
+            this.BeurtenLBL.Size = new System.Drawing.Size(135, 39);
+            this.BeurtenLBL.TabIndex = 3;
+            this.BeurtenLBL.Text = "Beurt: 0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(537, 633);
+            this.Controls.Add(this.BeurtenLBL);
             this.Controls.Add(this.ScoreLbl);
             this.Controls.Add(this.TimerLbl);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -363,6 +375,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label TimerLbl;
         private System.Windows.Forms.Label ScoreLbl;
+        private System.Windows.Forms.Label BeurtenLBL;
     }
 }
 

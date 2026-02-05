@@ -18,6 +18,7 @@ namespace Memory
         int minutes = 0;
 
         int score = 0;
+        int beurten = 0;
 
         public Form1()
         {
@@ -118,6 +119,8 @@ namespace Memory
                 {
                     firstClicked.ForeColor = firstClicked.BackColor;
                     secondClicked.ForeColor = secondClicked.BackColor;
+                    beurten++;
+                    BeurtenLBL.Text = "Beurt: " + beurten.ToString();
                 }
                 else
                 {
