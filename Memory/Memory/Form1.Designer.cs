@@ -79,7 +79,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label16, 0, 0);
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Webdings", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(30, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -306,8 +306,9 @@
             // TimerLbl
             // 
             this.TimerLbl.AutoSize = true;
+            this.TimerLbl.BackColor = System.Drawing.Color.Transparent;
             this.TimerLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TimerLbl.Location = new System.Drawing.Point(12, 552);
+            this.TimerLbl.Location = new System.Drawing.Point(48, 545);
             this.TimerLbl.Name = "TimerLbl";
             this.TimerLbl.Size = new System.Drawing.Size(169, 39);
             this.TimerLbl.TabIndex = 1;
@@ -318,8 +319,9 @@
             // ScoreLbl
             // 
             this.ScoreLbl.AutoSize = true;
+            this.ScoreLbl.BackColor = System.Drawing.Color.Transparent;
             this.ScoreLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScoreLbl.Location = new System.Drawing.Point(187, 552);
+            this.ScoreLbl.Location = new System.Drawing.Point(223, 545);
             this.ScoreLbl.Name = "ScoreLbl";
             this.ScoreLbl.Size = new System.Drawing.Size(143, 39);
             this.ScoreLbl.TabIndex = 2;
@@ -329,8 +331,9 @@
             // BeurtenLBL
             // 
             this.BeurtenLBL.AutoSize = true;
+            this.BeurtenLBL.BackColor = System.Drawing.Color.Transparent;
             this.BeurtenLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BeurtenLBL.Location = new System.Drawing.Point(354, 552);
+            this.BeurtenLBL.Location = new System.Drawing.Point(390, 545);
             this.BeurtenLBL.Name = "BeurtenLBL";
             this.BeurtenLBL.Size = new System.Drawing.Size(135, 39);
             this.BeurtenLBL.TabIndex = 3;
@@ -340,13 +343,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 633);
+            this.BackgroundImage = global::Memory.Properties.Resources.BackGround;
+            this.ClientSize = new System.Drawing.Size(594, 633);
             this.Controls.Add(this.BeurtenLBL);
             this.Controls.Add(this.ScoreLbl);
             this.Controls.Add(this.TimerLbl);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Memory";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
