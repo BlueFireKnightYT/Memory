@@ -164,17 +164,17 @@ namespace Memory
             // Create a fresh MemoryStream + SoundPlayer for each click so SFX can overlap.
             try
             {
-                var res = Properties.Resources.CardFlip; // UnmanagedMemoryStream from Resources.Designer
-                var ms = new MemoryStream();
-                res.Position = 0;
-                res.CopyTo(ms);
-                ms.Position = 0;
+                var cardFlipSFX = Properties.Resources.CardFlip; // UnmanagedMemoryStream from Resources.Designer
+                var newMemoryStream = new MemoryStream();
+                cardFlipSFX.Position = 0;
+                cardFlipSFX.CopyTo(newMemoryStream);
+                newMemoryStream.Position = 0;
 
-                var sp = new SoundPlayer(ms);
+                var sp = new SoundPlayer(newMemoryStream);
                 sp.Play();
 
                 // keep references until cleanup timer disposes them
-                activeSfx.Add((sp, ms, DateTime.UtcNow));
+                activeSfx.Add((sp, newMemoryStream, DateTime.UtcNow));
             }
             catch (Exception)
             {
@@ -231,6 +231,11 @@ namespace Memory
         }
 
         private void TimerLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
